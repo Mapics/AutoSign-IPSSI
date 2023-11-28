@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+require('dotenv').config();
 
 (async () => {
     // lance une nouvelle page
@@ -10,8 +11,8 @@ const puppeteer = require('puppeteer');
     await page.setViewport({width: 1024, height: 720});
 
     // rempli le formulaire
-    await page.type('#login', 'TON EMAIL IPSSI ICI');
-    await page.type('#password', 'TON MPD IPSSI ICI');
+    await page.type('#login', process.env.EMAIL);
+    await page.type('#password', process.env.PASSWORD);
     await page.click('#btnSeConnecter');
     
     console.log('Connecter vie le compte');
