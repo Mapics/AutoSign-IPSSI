@@ -14,5 +14,6 @@
     - Installez les dépendances : `npm install`
 
 3. **Execution auto**
+    - Rentrez vos infromation de connexion dans le code au Lignes 13 et 14
     - Pour lancer le script simplement lancer 'runAutoSign.bat'
     - Si vous rencontrer un probleme et voulez debuggez, modifier L.5  { headless : "new" } -> { headless : false } cela executera le script en faisant les actions visuelement
