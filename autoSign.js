@@ -3,7 +3,7 @@ require('dotenv').config();
 
 (async () => {
     // lance une nouvelle page
-    const browser = await puppeteer.launch({ headless : "new" });
+    const browser = await puppeteer.launch({ headless : false });
     const page = await browser.newPage();
     
     await page.goto('https://ecole-ipssi.ymag.cloud/index.php/login/2/');
